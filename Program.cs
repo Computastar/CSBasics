@@ -17,11 +17,18 @@
             string firstName = "Jason";
 
             printGreeting(firstName);
+
+            Console.WriteLine(subtractNumbers(10, 5));
         }
 
         private static void printGreeting(string name)
         {
             Console.WriteLine("Hello, " + name);
+        }
+
+        private static int subtractNumbers(int firstNum, int secondNum)
+        {
+            return firstNum - secondNum;
         }
 
     }
