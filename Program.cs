@@ -21,6 +21,10 @@
             Console.WriteLine(subtractNumbers(10, 5));
 
             Console.WriteLine(isStringLonger("Tuesday", 9));
+
+            Book myFavoriteBook = new Book("Twilight", 498);
+
+            Console.WriteLine(myFavoriteBook.Title + " is " + myFavoriteBook.Pages + " long.");
         }
 
         private static void printGreeting(string name)

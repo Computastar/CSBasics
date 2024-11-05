@@ -2,13 +2,17 @@
 
 public class Book
 {
-	public Book()
+    public string Title;
+    public int Pages;
+
+    public Book(string title, int pages)
 	{
-
-	public string Title;
-	public int Pages;
-
-
-
+        Title = title;
+        Pages = pages;
 	}
+
+
+
+
+	
 }
