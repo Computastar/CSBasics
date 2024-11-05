@@ -7,12 +7,18 @@
             Console.WriteLine("Hello, World!");
 
             double pi = 3.14;
-
             Console.WriteLine(pi);
-
-            bool learningCSharp = true;
             
+            bool learningCSharp = true;
             Console.WriteLine(learningCSharp);
+
+            string favouriteFilm = "Snatch";
+            Console.WriteLine("My favourite film is " + favouriteFilm);
+            favouriteFilm = "High School Musical";
+            Console.WriteLine("My favourite film is " + favouriteFilm);
+
+
+
         }
     }
 }
