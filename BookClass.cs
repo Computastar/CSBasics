@@ -14,17 +14,22 @@ public class Book
 
 	}
 
-    public void TurnPage()
+    public void TurnPage(int pagesToTurn = 1)
     {
-        if (CurrentPage < Pages)
+        for (int i = 0; i < pagesToTurn; i++)
         {
-            CurrentPage++;
-            Console.WriteLine(CurrentPage);
+            if (CurrentPage < Pages)
+            {
+                CurrentPage++;
+                Console.WriteLine(CurrentPage);
+            }
+            else
+            {
+                Console.WriteLine("The book is finished.");
+                break;
+            }
         }
-        else
-        {
-            Console.WriteLine("The book is finished.");
-        }
+
        
     }
 

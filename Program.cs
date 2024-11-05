@@ -27,6 +27,13 @@
             Console.WriteLine(myFavoriteBook.Title + " is " + myFavoriteBook.Pages + " long.");
 
             myFavoriteBook.TurnPage();
+
+            Book mySecondFavoriteBook = new Book("Twlight 2", 999);
+            Console.WriteLine(mySecondFavoriteBook.Title + " is " + mySecondFavoriteBook.Pages + " long.");
+            mySecondFavoriteBook.TurnPage(1000);
+
+
+
         }
 
         private static void printGreeting(string name)
