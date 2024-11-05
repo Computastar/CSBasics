@@ -4,21 +4,25 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
 
             double pi = 3.14;
             Console.WriteLine(pi);
             
             bool learningCSharp = true;
-            Console.WriteLine(learningCSharp);
 
             string favouriteFilm = "Snatch";
-            Console.WriteLine("My favourite film is " + favouriteFilm);
+
             favouriteFilm = "High School Musical";
-            Console.WriteLine("My favourite film is " + favouriteFilm);
 
+            string firstName = "Jason";
 
-
+            printGreeting(firstName);
         }
+
+        private static void printGreeting(string name)
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+
     }
 }
