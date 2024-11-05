@@ -25,6 +25,8 @@
             Book myFavoriteBook = new Book("Twilight", 498);
 
             Console.WriteLine(myFavoriteBook.Title + " is " + myFavoriteBook.Pages + " long.");
+
+            myFavoriteBook.TurnPage();
         }
 
         private static void printGreeting(string name)
