@@ -31,8 +31,7 @@
             Book mySecondFavoriteBook = new Book("Twlight 2", 999);
             Console.WriteLine(mySecondFavoriteBook.Title + " is " + mySecondFavoriteBook.Pages + " long.");
             mySecondFavoriteBook.TurnPage(1000);
-
-
+;
 
         }
 

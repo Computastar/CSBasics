@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 public class Book
 {
-    public string Title { get; set; }
-    public int Pages {  get; set; }
-    public int CurrentPage { get; set; } = 1;
+    public string Title { get;}
+    public int Pages {  get; }
+    public int CurrentPage { get; } = 1;
 
     public Book(string title, int pages)
 	{
@@ -16,12 +17,14 @@ public class Book
 
     public void TurnPage(int pagesToTurn = 1)
     {
+        int currentPage = CurrentPage;
+        
         for (int i = 0; i < pagesToTurn; i++)
         {
-            if (CurrentPage < Pages)
+            if (currentPage < Pages)
             {
-                CurrentPage++;
-                Console.WriteLine(CurrentPage);
+                currentPage++;
+                Console.WriteLine(currentPage);
             }
             else
             {
