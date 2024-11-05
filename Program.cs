@@ -19,6 +19,8 @@
             printGreeting(firstName);
 
             Console.WriteLine(subtractNumbers(10, 5));
+
+            Console.WriteLine(isStringLonger("Tuesday", 9));
         }
 
         private static void printGreeting(string name)
@@ -29,6 +31,11 @@
         private static int subtractNumbers(int firstNum, int secondNum)
         {
             return firstNum - secondNum;
+        }
+
+        private static bool isStringLonger(string word, int number)
+        {
+            return word.Length > number;
         }
 
     }
